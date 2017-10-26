@@ -88,29 +88,10 @@ function print(type: string) {
         <link rel="stylesheet" type="text/css" href="${vscode.Uri.file(getMediaPath('tomorrow.css')).toString()}">
         <link rel="stylesheet" type="text/css" href="${vscode.Uri.file(getMediaPath('checkbox.css')).toString()}">
         -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.9.0/github-markdown.min.css">
+        <link rel="stylesheet" type="text/css" href="${vscode.Uri.file(getMediaPath('github-markdown.css')).toString()}">
+        <link rel="stylesheet" type="text/css" href="${vscode.Uri.file(getMediaPath('github-container.css')).toString()}">
         ${computeCustomStyleSheetIncludes(doc.fileName)}
         ${getSettingsOverrideStyles()}
-        <style>
-        .container {
-            box-sizing: border-box;
-        
-            width: 980px;
-            margin-right: auto;
-            margin-left: auto;
-        
-            margin-top: 16px;
-            margin-bottom: 16px;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-        }
-        
-        .markdown-body {
-            padding: 45px;
-            border: 0;
-            border-radius: 0;
-        }
-        </style>        
     </head>
     <body>
     <div class="container">
